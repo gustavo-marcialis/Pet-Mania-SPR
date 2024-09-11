@@ -5,19 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet Shop</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100">
   <!-- Navbar -->
   <nav class="bg-[#50257c] p-4">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
-      <div class="text-white font-bold text-xl">PetShop Logo</div>
+      <div class="text-white font-bold text-xl">
+        <img src="images/logo.svg" alt="" class="w-50 h-auto">
+      </div>
 
       <!-- Menu (Desktop) -->
       <ul class="hidden md:flex space-x-8 text-white font-semibold">
-        <li><a href="#" class="hover:underline">Produtos</a></li>
-        <li><a href="#" class="hover:underline">Marcas</a></li>
-        <li><a href="#" class="hover:underline">Endereço</a></li>
+        <li><a href="#produtos" class="hover:underline">Produtos</a></li>
+        <li><a href="#marcas" class="hover:underline">Marcas</a></li>
+        <li><a href="#endereco" class="hover:underline">Endereço</a></li>
+        <li><a href="#sobrenos" class="hover:underline">Sobre Nós</a></li>
       </ul>
 
       <!-- Hamburger Menu (Mobile & Tablet) -->
@@ -33,9 +37,10 @@
     <!-- Dropdown Menu (Mobile & Tablet) -->
     <div id="mobile-menu" class="hidden md:hidden">
       <ul class="space-y-4 mt-4 text-center text-white font-semibold">
-        <li><a href="#" class="block">Produtos</a></li>
-        <li><a href="#" class="block">Marcas</a></li>
-        <li><a href="#" class="block">Endereço</a></li>
+        <li><a href="#produtos" class="block">Produtos</a></li>
+        <li><a href="#marcas" class="block">Marcas</a></li>
+        <li><a href="#endereco" class="block">Endereço</a></li>
+        <li><a href="#sobrenos" class="hover:underline">Sobre Nós</a></li>
       </ul>
     </div>
   </nav>
@@ -46,7 +51,7 @@
   </div>
 
   <!-- Main Content -->
-  <div class="flex flex-col items-center p-6">
+  <div class="flex flex-col items-center p-6" id="produtos">
     <!-- Título -->
     <h1 class="text-6xl text-center pb-6">Produtos</h1>
 
@@ -54,73 +59,89 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pb-6">
       <div>
         <figure class="text-center">
-          <img src="images/gato.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <img src="images/gato.png" alt="Descrição da Imagem" class="w-1/2 h-auto mx-auto">
           <figcaption class="mt-2">Produtos para Gatos</figcaption>
         </figure>
       </div>
       <div>
         <figure class="text-center">
-          <img src="images/cachorro.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <img src="images/cachorro.png" alt="Descrição da Imagem" class="w-1/2 h-auto mx-auto">
           <figcaption class="mt-2">Produtos para Cachorros</figcaption>
         </figure>
       </div>
       <div>
         <figure class="text-center">
-          <img src="images/roedor.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <img src="images/roedor.png" alt="Descrição da Imagem" class="w-1/2 h-auto mx-auto">
           <figcaption class="mt-2">Produtos para Roedores</figcaption>
         </figure>
       </div>
       <div>
         <figure class="text-center">
-          <img src="images/peixe.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <img src="images/peixe.png" alt="Descrição da Imagem" class="w-1/2 h-auto mx-auto">
           <figcaption class="mt-2">Produtos para Peixes</figcaption>
         </figure>
       </div>
       <div>
         <figure class="text-center">
-          <img src="images/passaro.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <img src="images/passaro.png" alt="Descrição da Imagem" class="w-1/2 h-auto mx-auto">
           <figcaption class="mt-2">Produtos para Pássaros</figcaption>
         </figure>
       </div>
       <div>
         <figure class="text-center">
-          <img src="images/tartaruga.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <img src="images/tartaruga.png" alt="Descrição da Imagem" class="w-1/2 h-auto mx-auto">
           <figcaption class="mt-2">Produtos para Tartarugas</figcaption>
         </figure>
       </div>
       <div>
         <figure class="text-center">
-          <img src="images/petisco.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <img src="images/petisco.png" alt="Descrição da Imagem" class="w-1/2 h-auto mx-auto">
           <figcaption class="mt-2">Petiscos e Acessórios</figcaption>
         </figure>
       </div>
       <div>
         <figure class="text-center">
-          <img src="images/medicamento.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <img src="images/medicamento.png" alt="Descrição da Imagem" class="w-1/2 h-auto mx-auto">
           <figcaption class="mt-2">Higiene e Medicamentos</figcaption>
         </figure>
       </div>
-      
+    </div>
+    <a href="https://wa.me/+5513996685204"><button class="bg-transparent">
+      <img src="images/btn-1.svg" alt="Ícone" class="w-40 h-auto">
+    </button></a>
     </div>
 
     <!-- Botão -->
-    <button class="bg-transparent">
-      <img src="images/btn-1.svg" alt="Ícone" class="w-40 h-auto">
-    </button>
+    
 
-    <div class="bg-[#50257c] w-full p-6 mt-6">
+    <!-- Marcas -->
+    <div class="bg-[#50257c] w-full p-6 mt-6" id="marcas">
       <h1 class="text-6xl text-center text-white">Marcas</h1>
+    </div>
 
-    </div>
-    <div class="w-full p-6"></div>
+    <!-- Endereço -->
+    <div class="w-full p-6" id="endereco">
       <h1 class="text-6xl text-center pb-6">Endereço</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12687.90909300805!2d-46.531941674522024!3d-24.04357908881158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce2187e717c233%3A0x1db156d64dbd8417!2sPet%20Mania%20SPR!5e0!3m2!1sen!2sbr!4v1726072181257!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12687.90909300805!2d-46.531941674522024!3d-24.04357908881158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce2187e717c233%3A0x1db156d64dbd8417!2sPet%20Mania%20SPR!5e0!3m2!1sen!2sbr!4v1726072181257!5m2!1sen!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="p-6">
-    <h1 class="text-6xl text-center">Sobre Nós</h1>
-    <p class="w-30 pl-12 pr-12">O Pet Mania SPR oferece uma linha completa de rações para gatos, cachorros, roedores, peixe Betta e pássaros, além de petiscos, acessórios, produtos de higiene e medicamentos em Praia Grande. Somos apaixonados em animais assim como você. Venha conferir as novidades que temos em nosso estoque para servir bem nossos melhores amigos. </p>
+
+    <!-- Sobre Nós -->
+    <div class="p-6 text-center" id="sobrenos">
+      <h1 class="text-6xl pb-4">Sobre Nós</h1>
+      <p class="w-30 pl-12 pr-12 pb-4 text-left">
+        O Pet Mania SPR oferece uma linha completa de rações para gatos, cachorros, roedores, peixe Betta e pássaros, além de petiscos, acessórios, produtos de higiene e medicamentos em Praia Grande. Somos apaixonados em animais assim como você. Venha conferir as novidades que temos em nosso estoque para servir bem nossos melhores amigos.
+      </p>
+      <a href="https://wa.me/+5513996685204"><button class="bg-transparent">
+      <img src="images/btn-2.svg" alt="Ícone" class="w-40 h-auto">
+    </button></a>
+    </div>
   </div>
-  </div>
+
+  <a href="https://wa.me/+5513996685204" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg whatsapp-button flex items-center justify-center">
+    <img src="images/whatsapp.svg" alt="">
+  </a>
+
+
 
   <script src="script.js"></script>
 </body>
