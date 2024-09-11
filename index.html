@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-100">
   <!-- Navbar -->
-  <nav class="bg-[#50257c] p-4">
+  <nav class="bg-[#50257c] p-4 fixed w-full">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
       <div class="text-white font-bold text-xl">
@@ -46,7 +46,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <div>
+  <div class="pt-20">
     <img src="images/Hero.png" alt="Banner" class="w-full h-auto">
   </div>
 
@@ -56,7 +56,7 @@
     <h1 class="text-6xl text-center pb-6">Produtos</h1>
 
     <!-- Grid de Produtos -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pb-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 pb-6">
       <div>
         <figure class="text-center">
           <img src="images/gato.png" alt="Descrição da Imagem" class="w-1/2 h-auto mx-auto">
@@ -115,8 +115,92 @@
     
 
     <!-- Marcas -->
-    <div class="bg-[#50257c] w-full p-6 mt-6" id="marcas">
-      <h1 class="text-6xl text-center text-white">Marcas</h1>
+    <div class="bg-[#50257c] text-white w-full p-6 pb-6 text-center" id="marcas">
+      <h1 class="text-6xl text-center text-white pb-6">Marcas</h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 pb-6">
+        <div>
+          <img src="images/golden.png" alt="">
+        </div>
+        <div>
+          <img src="images/whiskas.png" alt="">
+        </div>
+        <div>
+          <img src="images/gp.png" alt="">
+        </div>
+        <div>
+          <img src="images/sd.png" alt="">
+        </div>
+      </div>
+
+
+      <label for="premium-select" class="block mb-2 text-lg font-semibold text-white">Rações Premium</label>
+      <select id="premium-select" class="custom-select">
+      <option value="premium-special">Premium Special</option>
+      <option value="super-premium">Super Premium</option>
+      <option value="golden">Golden</option>
+      <option value="premier">Premier</option>
+      <option value="allcanis">Allcanis</option>
+      <option value="allcats">Allcats</option>
+      <option value="special-dog">Special Dog</option>
+      <option value="special-cat">Special Cat</option>
+      <option value="pimpo">Pimpo</option>
+      <option value="unna">Unna</option>
+      <option value="biocare">BioCare</option>
+      <option value="magnus-cat">Magnus Cat</option>
+      <option value="magnus-caes">Magnus Cães</option>
+      <option value="multidog">MultiDog</option>
+      <option value="gran-plus">Gran Plus</option>
+      <option value="unicat">Únicat</option>
+      <option value="chase">Chase</option>
+      <option value="origens">Origens</option>
+      <option value="optimum">Optimum</option>
+      <option value="tuko-natural">Tuko Natural</option>
+      <option value="formula-natural">Fórmula Natural</option>
+      <option value="purina-friskies">Purina Friskies</option>
+      <option value="faro">Faro</option>
+      <option value="premiatta">Premiatta</option>
+      <option value="premiatta-whey-hd">Premiatta Whey HD</option>
+      <option value="pedigree">Pedigree</option>
+      <option value="speed-dog">Speed Dog</option>
+      <option value="laddog">LadDog</option>
+      <option value="royal-canin">Royal Canin</option>
+      <option value="prohealth">Prohealth</option>
+      <option value="kettymil">Kettymil</option>
+      <option value="qualiday">QualiDay</option>
+      <option value="matisse">Matisse</option>
+      <option value="buddy-power">Buddy Power</option>
+    </select>
+
+    <label for="sache" class="block mb-2 text-lg font-semibold text-white">Sachês Gato e Cachorro</label>
+      <select class="custom-select">
+        <option value="kelcat">Kelcat</option>
+        <option value="friskies">Friskies</option>
+        <option value="whiskas">Whiskas</option>
+        <option value="kitekat">Kitekat</option>
+        <option value="doogs">Doogs</option>
+        <option value="petiscao">Petiscão</option>
+        <option value="mister-bone">Mister Bone</option>
+        <option value="dog-chow">Dog Chow</option>
+        <option value="snacks">Snacks</option>
+      </select>
+
+      <label for="higiene-gato" class="block mb-2 text-lg font-semibold text-white">Higiene para Gatos</label>
+      <select class="custom-select">
+        <option value="pipicat">Pipicat</option>
+        <option value="wicat">Wicat</option>
+        <option value="sanithy-prime">Sanithy Prime</option>
+        <option value="silica-real">Sílica Real</option>
+        <option value="huspet">Huspet</option>
+        <option value="dbest">Dbest</option>
+        <option value="edukat">Edukat</option>
+        <option value="jeta">Jeta</option>
+        <option value="mrmiau">Mrmiau</option>
+        <option value="carecat">Carecat</option>
+        <option value="carepet">Carepet</option>
+        <option value="ipetwoods">Ipetwoods</option>
+      </select>
+    
     </div>
 
     <!-- Endereço -->
