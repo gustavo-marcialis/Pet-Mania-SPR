@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-[#50257c] p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-white font-bold text-xl">PetShop Logo</div>
+
+      <!-- Menu (Desktop) -->
+      <ul class="hidden md:flex space-x-8 text-white font-semibold">
+        <li><a href="#" class="hover:underline">Produtos</a></li>
+        <li><a href="#" class="hover:underline">Marcas</a></li>
+        <li><a href="#" class="hover:underline">Endereço</a></li>
+      </ul>
+
+      <!-- Hamburger Menu (Mobile & Tablet) -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-white focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Dropdown Menu (Mobile & Tablet) -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <ul class="space-y-4 mt-4 text-center text-white font-semibold">
+        <li><a href="#" class="block">Produtos</a></li>
+        <li><a href="#" class="block">Marcas</a></li>
+        <li><a href="#" class="block">Endereço</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div>
+    <img src="images/Hero.png" alt="Banner" class="w-full h-auto">
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex flex-col items-center p-6">
+    <!-- Título -->
+    <h1 class="text-6xl text-center pb-6">Produtos</h1>
+
+    <!-- Grid de Produtos -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pb-6">
+      <div>
+        <figure class="text-center">
+          <img src="images/gato.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <figcaption class="mt-2">Produtos para Gatos</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="text-center">
+          <img src="images/cachorro.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <figcaption class="mt-2">Produtos para Cachorros</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="text-center">
+          <img src="images/roedor.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <figcaption class="mt-2">Produtos para Roedores</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="text-center">
+          <img src="images/peixe.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <figcaption class="mt-2">Produtos para Peixes</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="text-center">
+          <img src="images/passaro.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <figcaption class="mt-2">Produtos para Pássaros</figcaption>
+        </figure>
+      </div>
+      
+      <div>
+        <figure class="text-center">
+          <img src="images/petisco.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <figcaption class="mt-2">Petiscos e Acessórios</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="text-center">
+          <img src="images/medicamento.png" alt="Descrição da Imagem" class="w-50 h-auto">
+          <figcaption class="mt-2">Higiene e Medicamentos</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Botão -->
+    <button class="bg-transparent">
+      <img src="images/btn-1.svg" alt="Ícone" class="w-40 h-auto">
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
