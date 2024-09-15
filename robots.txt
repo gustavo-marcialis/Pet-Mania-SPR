@@ -1,0 +1,5 @@
+
+User-agent: *
+Disallow:
+
+Sitemap: https://www.petmaniaspr.com.br/sitemap.xml
