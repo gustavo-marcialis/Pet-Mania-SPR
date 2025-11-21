@@ -51,9 +51,31 @@
   </nav>
 
   <!-- Hero Section -->
-  <div class="pt-20 sm:pt-45">
-    <img src="images/Hero.png" alt="Banner" class="w-full h-auto">
-</div>
+  <div class="bg-[#50257c] text-white pt-24 pb-12 px-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Lado Esquerdo: Banho e Tosa -->
+      <div class="flex flex-col items-center text-center p-6 border border-white/20 rounded-lg shadow-lg bg-white/10 backdrop-blur-sm">
+        <h2 class="text-4xl mb-4 font-[Alfa Slab One]">Banho & Tosa</h2>
+        <p class="mb-6 text-lg font-sans">
+          Cuidamos do seu melhor amigo com todo carinho, amor e profissionalismo que ele merece.
+        </p>
+        <a href="https://wa.me/+5513996685204" class="bg-white text-[#50257c] font-bold py-3 px-8 rounded-full shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+          Agende seu horário
+        </a>
+      </div>
+
+      <!-- Lado Direito: Disk Ração -->
+      <div class="flex flex-col items-center text-center p-6 border border-white/20 rounded-lg shadow-lg bg-white/10 backdrop-blur-sm">
+        <h2 class="text-4xl mb-4 font-[Alfa Slab One]">Disk Ração</h2>
+        <p class="mb-6 text-lg font-sans">
+          Receba a ração do seu pet no conforto da sua casa com rapidez e praticidade.
+        </p>
+        <a href="https://wa.me/+5513996685204" class="bg-white text-[#50257c] font-bold py-3 px-8 rounded-full shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+          Faça seu pedido
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- Main Content -->
   <div class="flex flex-col items-center p-6" id="produtos">
@@ -61,53 +83,69 @@
     <h1 class="text-5xl text-center pb-6">Produtos</h1>
 
     <!-- Grid de Produtos -->
-    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 pb-6">
-      <div>
-        <figure class="text-center">
-          <img src="images/gato.png" alt="Produtos para gatos" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Gatos</figcaption>
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 pb-6 w-full max-w-7xl mx-auto">
+      <div class="flex flex-col items-center">
+        <figure class="text-center w-full">
+          <div class="h-40 flex items-center justify-center mb-2">
+            <img src="images/gato.png" alt="Produtos para gatos" class="max-h-full w-auto mx-auto object-contain">
+          </div>
+          <figcaption class="mt-2 text-lg font-semibold">Produtos para Gatos</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/cachorro.png" alt="Produtos para cachorros" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Cachorros</figcaption>
+      <div class="flex flex-col items-center">
+        <figure class="text-center w-full">
+          <div class="h-40 flex items-center justify-center mb-2">
+            <img src="images/cachorro.png" alt="Produtos para cachorros" class="max-h-full w-auto mx-auto object-contain">
+          </div>
+          <figcaption class="mt-2 text-lg font-semibold">Produtos para Cachorros</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/roedor.png" alt="Produtos para roedores" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Roedores</figcaption>
+      <div class="flex flex-col items-center">
+        <figure class="text-center w-full">
+          <div class="h-40 flex items-center justify-center mb-2">
+            <img src="images/roedor.png" alt="Produtos para roedores" class="max-h-full w-auto mx-auto object-contain">
+          </div>
+          <figcaption class="mt-2 text-lg font-semibold">Produtos para Roedores</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/peixe.png" alt="Produtos para peixes" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Peixes</figcaption>
+      <div class="flex flex-col items-center">
+        <figure class="text-center w-full">
+          <div class="h-40 flex items-center justify-center mb-2">
+            <img src="images/peixe.png" alt="Produtos para peixes" class="max-h-full w-auto mx-auto object-contain">
+          </div>
+          <figcaption class="mt-2 text-lg font-semibold">Produtos para Peixes</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/passaro.png" alt="Produtos para pássarps" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Pássaros</figcaption>
+      <div class="flex flex-col items-center">
+        <figure class="text-center w-full">
+          <div class="h-40 flex items-center justify-center mb-2">
+            <img src="images/passaro.png" alt="Produtos para pássaros" class="max-h-full w-auto mx-auto object-contain">
+          </div>
+          <figcaption class="mt-2 text-lg font-semibold">Produtos para Pássaros</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/tartaruga.png" alt="Produtos para tartarugas" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Tartarugas</figcaption>
+      <div class="flex flex-col items-center">
+        <figure class="text-center w-full">
+          <div class="h-40 flex items-center justify-center mb-2">
+            <img src="images/tartaruga.png" alt="Produtos para tartarugas" class="max-h-full w-auto mx-auto object-contain">
+          </div>
+          <figcaption class="mt-2 text-lg font-semibold">Produtos para Tartarugas</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/petisco.png" alt="Petiiscos e acessórios" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Petiscos e Acessórios</figcaption>
+      <div class="flex flex-col items-center">
+        <figure class="text-center w-full">
+          <div class="h-40 flex items-center justify-center mb-2">
+            <img src="images/petisco.png" alt="Petiscos e acessórios" class="max-h-full w-auto mx-auto object-contain">
+          </div>
+          <figcaption class="mt-2 text-lg font-semibold">Petiscos e Acessórios</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/medicamento.png" alt="Medicamentos" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Medicamentos</figcaption>
+      <div class="flex flex-col items-center">
+        <figure class="text-center w-full">
+          <div class="h-40 flex items-center justify-center mb-2">
+            <img src="images/medicamento.png" alt="Medicamentos" class="max-h-full w-auto mx-auto object-contain">
+          </div>
+          <figcaption class="mt-2 text-lg font-semibold">Medicamentos</figcaption>
         </figure>
       </div>
 
