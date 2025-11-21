@@ -3,11 +3,11 @@ html {
 }
 
 body {
-  font-family: 'Alatsi';
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Alfa Slab One';
+  font-family: 'Fredoka', sans-serif;
 }
 
 /* styles.css */
@@ -65,4 +65,13 @@ h1, h2, h3, h4, h5, h6 {
   .custom-select-menu option:hover {
     background-color: #f3f4f6;
   }
-  
+
+/* Pet Theme Pattern Background */
+.bg-purple-pet-pattern {
+  background-color: #50257c;
+  background-image:
+    radial-gradient(#6a32a3 15%, transparent 16%),
+    radial-gradient(#6a32a3 15%, transparent 16%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}

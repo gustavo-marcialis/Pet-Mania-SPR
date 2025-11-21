@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet Mania SPR</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
   <meta name="description" content="Bem-vindos ao pet shop Pet Mania SPR!">
 <meta name="google-site-verification" content="apU0NMICmJ6HY4Lsfmq2a5i8497b006n7jwMfSh-mRo" />
@@ -14,7 +14,7 @@
 
 <body class="bg-gray-100">
   <!-- Navbar -->
-  <nav class="bg-[#50257c] p-4 fixed w-full">
+  <nav class="bg-purple-pet-pattern p-4 fixed w-full z-50">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
       <div class="text-white font-bold text-xl">
@@ -51,9 +51,36 @@
   </nav>
 
   <!-- Hero Section -->
-  <div class="pt-20 sm:pt-45">
-    <img src="images/Hero.png" alt="Banner" class="w-full h-auto">
-</div>
+  <div class="pt-20 mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 h-auto md:h-[500px]">
+      <!-- Left Side: Disk Ração -->
+      <div class="bg-[#f3f4f6] flex flex-col justify-center items-center p-10 text-center">
+        <h2 class="text-4xl md:text-5xl text-[#50257c] mb-4 font-bold">Disk Ração</h2>
+        <p class="text-lg md:text-xl text-gray-700 mb-6">
+          Receba a ração do seu pet no conforto da sua casa com rapidez e segurança.
+          Temos as melhores marcas e preços!
+        </p>
+        <img src="images/Hero.png" alt="Disk Ração" class="w-3/4 max-w-xs rounded-lg shadow-lg object-cover hidden">
+        <!-- Note: Hiding the old image or replacing it with relevant icon if available.
+             Using text primarily as per request layout. -->
+      </div>
+
+      <!-- Right Side: Banho & Tosa -->
+      <div class="bg-[#e5e7eb] flex flex-col justify-center items-center p-10 text-center">
+        <h2 class="text-4xl md:text-5xl text-[#50257c] mb-4 font-bold">Banho & Tosa</h2>
+        <p class="text-lg md:text-xl text-gray-700 mb-6">
+          Cuidados especiais para o seu melhor amigo. Profissionais qualificados e ambiente seguro.
+          Agende o horário do seu pet!
+        </p>
+        <a href="https://wa.me/+5513996685204" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-xl transition duration-300 shadow-lg flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          Agendar Horário
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- Main Content -->
   <div class="flex flex-col items-center p-6" id="produtos">
@@ -61,56 +88,71 @@
     <h1 class="text-5xl text-center pb-6">Produtos</h1>
 
     <!-- Grid de Produtos -->
-    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 pb-6">
-      <div>
-        <figure class="text-center">
-          <img src="images/gato.png" alt="Produtos para gatos" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Gatos</figcaption>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 pb-6 w-full max-w-6xl">
+      <div class="flex flex-col items-center h-full p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <figure class="text-center w-full flex flex-col h-full justify-between">
+          <div class="flex-grow flex items-center justify-center">
+            <img src="images/gato.png" alt="Produtos para gatos" class="w-32 h-32 object-contain mx-auto transition-transform duration-300 hover:scale-110">
+          </div>
+          <figcaption class="mt-4 text-xl font-semibold text-gray-700">Produtos para Gatos</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/cachorro.png" alt="Produtos para cachorros" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Cachorros</figcaption>
+      <div class="flex flex-col items-center h-full p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <figure class="text-center w-full flex flex-col h-full justify-between">
+          <div class="flex-grow flex items-center justify-center">
+            <img src="images/cachorro.png" alt="Produtos para cachorros" class="w-32 h-32 object-contain mx-auto transition-transform duration-300 hover:scale-110">
+          </div>
+          <figcaption class="mt-4 text-xl font-semibold text-gray-700">Produtos para Cachorros</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/roedor.png" alt="Produtos para roedores" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Roedores</figcaption>
+      <div class="flex flex-col items-center h-full p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <figure class="text-center w-full flex flex-col h-full justify-between">
+          <div class="flex-grow flex items-center justify-center">
+            <img src="images/roedor.png" alt="Produtos para roedores" class="w-32 h-32 object-contain mx-auto transition-transform duration-300 hover:scale-110">
+          </div>
+          <figcaption class="mt-4 text-xl font-semibold text-gray-700">Produtos para Roedores</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/peixe.png" alt="Produtos para peixes" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Peixes</figcaption>
+      <div class="flex flex-col items-center h-full p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <figure class="text-center w-full flex flex-col h-full justify-between">
+          <div class="flex-grow flex items-center justify-center">
+            <img src="images/peixe.png" alt="Produtos para peixes" class="w-32 h-32 object-contain mx-auto transition-transform duration-300 hover:scale-110">
+          </div>
+          <figcaption class="mt-4 text-xl font-semibold text-gray-700">Produtos para Peixes</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/passaro.png" alt="Produtos para pássarps" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Pássaros</figcaption>
+      <div class="flex flex-col items-center h-full p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <figure class="text-center w-full flex flex-col h-full justify-between">
+          <div class="flex-grow flex items-center justify-center">
+            <img src="images/passaro.png" alt="Produtos para pássaros" class="w-32 h-32 object-contain mx-auto transition-transform duration-300 hover:scale-110">
+          </div>
+          <figcaption class="mt-4 text-xl font-semibold text-gray-700">Produtos para Pássaros</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/tartaruga.png" alt="Produtos para tartarugas" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Produtos para Tartarugas</figcaption>
+      <div class="flex flex-col items-center h-full p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <figure class="text-center w-full flex flex-col h-full justify-between">
+          <div class="flex-grow flex items-center justify-center">
+            <img src="images/tartaruga.png" alt="Produtos para tartarugas" class="w-32 h-32 object-contain mx-auto transition-transform duration-300 hover:scale-110">
+          </div>
+          <figcaption class="mt-4 text-xl font-semibold text-gray-700">Produtos para Tartarugas</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/petisco.png" alt="Petiiscos e acessórios" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Petiscos e Acessórios</figcaption>
+      <div class="flex flex-col items-center h-full p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <figure class="text-center w-full flex flex-col h-full justify-between">
+          <div class="flex-grow flex items-center justify-center">
+            <img src="images/petisco.png" alt="Petiscos e acessórios" class="w-32 h-32 object-contain mx-auto transition-transform duration-300 hover:scale-110">
+          </div>
+          <figcaption class="mt-4 text-xl font-semibold text-gray-700">Petiscos e Acessórios</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="text-center">
-          <img src="images/medicamento.png" alt="Medicamentos" class="w-1/2 h-auto mx-auto">
-          <figcaption class="mt-2">Medicamentos</figcaption>
+      <div class="flex flex-col items-center h-full p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <figure class="text-center w-full flex flex-col h-full justify-between">
+          <div class="flex-grow flex items-center justify-center">
+            <img src="images/medicamento.png" alt="Medicamentos" class="w-32 h-32 object-contain mx-auto transition-transform duration-300 hover:scale-110">
+          </div>
+          <figcaption class="mt-4 text-xl font-semibold text-gray-700">Medicamentos</figcaption>
         </figure>
       </div>
-
     </div>
 
     <h5>Entregamos em toda a Praia Grande. Consulte nossas taxas</h5>
@@ -123,7 +165,7 @@
 
 
   <!-- Marcas -->
-  <div class="bg-[#50257c] text-white w-full p-6 pb-6 text-center" id="marcas">
+  <div class="bg-purple-pet-pattern text-white w-full p-6 pb-6 text-center" id="marcas">
     <h2 class="text-5xl text-center text-white pb-6">Marcas</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pb-6">
